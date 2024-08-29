@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="msg.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+        background-image: url('https://static.vecteezy.com/system/resources/previews/001/907/544/original/flat-design-background-with-abstract-pattern-free-vector.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .box {
+        background-color: rgb(221, 221, 0);
+        border: 2px solid #333333;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    form {
+        margin: 0;
+    }
+
+    input[type="file"] {
+        border: 2px solid #333333;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: rgb(95, 104, 189);
+        cursor: pointer;
+        width: 100%;
+
+    }
+
+    input[type="file"]:hover {
+        border-color: #555555;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <div>
+                <img src="upload.png" alt="">
+            </div>
+            <div>
+                <form>
+                    <input type="file" id="myFile" name="filename">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="bootstrap.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisualVibe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo"><img src="v__2_-removebg-preview.png" alt="">VisualVibe</div>
+            <div class="menu">
+                <a href="index.html" class="menu-item"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                <a href="search.html" class="menu-item"><i class="fa fa-search" aria-hidden="true"></i> Search</a>
+                <a href="explore.html" class="menu-item"><i class="fa fa-compass" aria-hidden="true"></i> Explore</a>
+                <a href="#" class="menu-item" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <i class="fab fa-facebook-messenger" aria-hidden="true"></i> Messages
+                </a>
+                <a href="create.html" class="menu-item"><i class="fa fa-plus-square" aria-hidden="true"></i> Create</a>
+                <a href="profile.html" class="menu-item">
+                    <img width="30" height="30" src="dhoni.jpeg" alt="Profile" class="rounded-circle"> Profile
+                </a>
+                <a href="login.html" class="menu-item"><i class="fa fa-bars" aria-hidden="true"></i> Logout</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="stories">
+                <div class="image-container" onclick="togglePlayPause('audio1')">
+                    <img src="virat.jpeg" alt="Click to Play" class="rounded-circle me-2" style="width: 80px; height: 80px;">
+                </div>
+                <audio id="audio1" src="Whatsapp_status_video_in_tamil_10_enrathukkulla_(youconvert.net).mp3"></audio>
+
+                <div class="image-container" onclick="togglePlayPause('audio2')">
+                    <img src="Pandya.jpeg" alt="Click to Play" class="rounded-circle " style="width: 80px; height: 80px;">
+                </div>
+                <audio id="audio2" src="virumanditheme-3988.mp3"></audio>
+
+                <div class="image-container" onclick="togglePlayPause('audio3')">
+                    <img src="Raina.jpeg" alt="Click to Play" class="rounded-circle me-2" style="width: 80px; height: 80px;">
+                </div>
+                <audio id="audio3" src="Petta_Velan_BGM_Ringtone_Tamil_BGM_Ringtone_Anirudh_Rajinikanth_Download_Link_(youconvert.net).mp3"></audio>
+
+                <div class="image-container" onclick="togglePlayPause('audio4')">
+                    <img src="rohit.jpeg" alt="Click to Play" class="rounded-circle me-2" style="width: 80px; height: 80px;">
+                </div>
+                <audio id="audio4" src="Ennoduthan kannam moochi   konja naal poru thalaiva  aasai movie.mp3"></audio>
+
+                <div class="image-container" onclick="togglePlayPause('audio5')">
+                    <img src="csk.jpeg" alt="Click to Play" class="rounded-circle me-2" style="width: 80px; height: 80px;">
+                </div>
+                <audio id="audio5" src="manjal-veiyil-ringtone-60517.mp3"></audio>
+            </div>
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-user">bhuvanesh_20</div>
+                    <div class="post-time">1d</div>
+                </div>
+                <div class="post-content">
+                    <img src="bhuviDP.jpg" alt="Post Image">
+                </div>
+                <div class="post-caption">Engine roaring, Heart soaring🚀🏍️</div>
+                <div class="post-actions">
+                    <button class="like-button"><i class="fa-regular fa-heart"></i> Like</button>
+                    <span class="like-count">0 likes</span>
+                </div>
+                <div class="comments-section">
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                    <button class="add-comment-button">Post</button>
+                    <ul class="comments-list"></ul>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-user">bhuvanesh_20</div>
+                    <div class="post-time">1d</div>
+                </div>
+                <div class="post-content">
+                    <img src="post4.jpeg" alt="Post Image">
+                </div>
+                <div class="post-caption">Throttle open, Worries closed🏍️💨</div>
+                <div class="post-actions">
+                    <button class="like-button"><i class="fa-regular fa-heart"></i> Like</button>
+                    <span class="like-count">0 likes</span>
+                </div>
+                <div class="comments-section">
+                    <input type="text" class="comment-input" placeholder="Add a comment...">
+                    <button class="add-comment-button">Post</button>
+                    <ul class="comments-list"></ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Messages</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- User song -->
+            <div class="d-flex mb-1">
+                <div class="image-container" onclick="togglePlayPause('audio1')">
+                    <img src="virat.jpeg" alt="Click to Play" class="rounded-circle me-2" style="width: 80px; height: 80px;">
+                </div>
+                <audio id="audio1" src="manjal-veiyil-ringtone-60517.mp3"></audio>
+                
+                <div class="image-container" onclick="togglePlayPause('audio2')">
+                    <img src="Pandya.jpeg" alt="Click to Play" class="rounded-circle me-2" style="width: 80px; height: 80px;">
+                </div>
+                <audio id="audio2" src="virumanditheme-3988.mp3"></audio>
+                
+                <div class="image-container" onclick="togglePlayPause('audio3')">
+                    <img src="rohit.jpeg" alt="Click to Play" class="rounded-circle me-2" style="width: 80px; height: 80px;">
+                </div>
+                <audio id="audio3" src="manjal-veiyil-ringtone-60517.mp3"></audio>
+            </div>
+        
+    
+            <!-- Messages and Requests -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="mb-0">Messages</h6>
+                <a href="#" class="btn btn-link p-0" style="text-decoration: none;">Request</a>
+            </div>
+    
+            <!-- Message List -->
+            <ul class="list-unstyled">
+                <li class="mb-2">
+                    <a style="border: 2px solid gray; padding: 5px; border-radius: 10px;" href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="virat.jpeg" alt="Virat Kohli" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Virat Kohli</b>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a style="border: 2px solid gray; padding: 5px; border-radius: 10px;" href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="bhuviDP.jpg" alt="Bhuvanesh" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Bhuvanesh</b>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a style="border: 2px solid gray; padding: 5px; border-radius: 10px;" href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="Raina.jpeg" alt="Suresh Raina" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Suresh Raina</b>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a style="border: 2px solid gray; padding: 5px; border-radius: 10px;" href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="Pandya.jpeg" alt="Hardik Pandya" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Hardik Pandya</b>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a style="border: 2px solid gray; padding: 5px; border-radius: 10px;" href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="rohit.jpeg" alt="Rohit Sharma" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Rohit Sharma</b>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a style="border: 2px solid gray; padding: 5px; border-radius: 10px;" href="#" class="d-flex align-items-center text-decoration-none">
+                        <img src="csk.jpeg" alt="Chennai IPL" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        <b>Chennai IPL</b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <script src="bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

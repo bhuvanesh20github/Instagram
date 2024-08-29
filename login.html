@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            padding: 3%;
+            margin: 0;
+            box-sizing: border-box;
+            animation: fadeIn 1.5s ease-in-out;
+            background-image: url('https://i.redd.it/fepwpoclrhl51.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+
+        .login {
+            float: right;
+            margin-right: 30%;
+            margin-bottom: 1%;
+            border: 2px solid rgb(97, 93, 93);
+            width: 30%;
+            text-align: center;
+            padding: 2%;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .login:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #17a2b8;
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            background-color: rgb(206, 195, 195);
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            width: 90%;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            background-color: #fff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        a.nav-link {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        a.nav-link:hover {
+            color: #17a2b8;
+        }
+
+        a.nav-link p {
+            margin: 0;
+        }
+
+
+        @media (max-width: 575.98px) {
+            .login {
+                width: 100%;
+                margin-right: 0;
+                border: none;
+                padding: 5%;
+            }
+
+            .app-links img {
+                width: 100%;
+            }
+
+            body {
+                padding: 2%;
+            }
+
+            .login button,
+            .login input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+
+        }
+
+
+
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .login {
+                width: 100%;
+                margin-right: 20%;
+                padding: 3%;
+            }
+
+            .app-links img {
+                width: 40%;
+            }
+
+
+        }
+    </style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="login rounded-5 shadow box-area">
+        <div class="container">
+            <header class="text-light">
+                <h1>Instagram</h1>
+            </header>
+            <label class="m-3" for="name">
+                <input style="background-color: rgb(206, 195, 195);" type="text" placeholder="username">
+            </label><br>
+            <label class="m-3" for="password">
+                <input style="background-color: rgb(206, 195, 195);" type="password" placeholder="password">
+            </label><br>
+            <button class="btn text-light bg-info m-3"><a class="nav-link" href="index.html">Login</a></button>
+            <a class="nav-link text-light" href="#">
+                <p>Forget password?</p>
+            </a>
+        </div>
+    </div>
+
+    
+        <div
+            style="float: right; margin-right: 30%; margin-bottom: 1%; border: 2px solid rgb(97, 93, 93); width: 30%; text-align: center;padding: 1%; font-size: large;">
+            <p class="text-light">Don't have an account?</p><a style="text-decoration: none;" href="signup.html">Sign
+                up</a>
+        </div>
+    </div>
+
+    <div style="float: right; margin-right: 30%; margin-bottom: 1%; width: 30%; text-align: center;padding: 1%;">
+        <p>Get the app</p>
+        <div class="app-links d-flex justify-content-center">
+            <a
+                href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3D827FBF22-37A8-487D-B195-583F7339377C%26utm_campaign%3DunifiedHome%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge%26original_referrer%3Dhttps://www.instagram.com/bhuvi._20/&pli=1">
+                <img style="width: 80%;" src="googleplay.png" alt="Google Play">
+            </a>
+            <a href="https://apps.microsoft.com/home?hl=en-us&gl=US">
+                <img style="width: 40%;" src="microsoft.png" alt="Microsoft Store">
+            </a>
+        </div>
+    
+
+
+
+
+    <script src="bootstrap.bundle.js"></script>
+</body>
+
+</html>
